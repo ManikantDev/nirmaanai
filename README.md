@@ -2,7 +2,7 @@
 
 **Know your construction cost in 60 seconds.** AI-powered construction cost estimates for home builders in Telangana, with hyperlocal district-level pricing and a conversational interface in English or Telugu.
 
-**Live demo:** https://nirmaanai.vercel.app *(update after deploy)*
+**Live demo:** https://nirmaanai.vercel.app 
 
 ![NirmaanAI Dashboard](./screenshot.png)
 ![NirmaanAI Chat in Action](./screenshot-chat.png)
