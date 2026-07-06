@@ -5,6 +5,7 @@
 **Live demo:** https://nirmaanai.vercel.app
 
 ![NirmaanAI Dashboard](./screenshot.png)
+![NirmaanAI Chat in Action](./screenshot-chat.png)
 
 ## ✨ Features
 
