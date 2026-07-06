@@ -2,30 +2,29 @@
 
 **Know your construction cost in 60 seconds.** AI-powered construction cost estimates for home builders in Telangana, with hyperlocal district-level pricing and a conversational interface in English or Telugu.
 
-**Live demo:** https://nirmaanai.vercel.app 
+**Live demo:** https://nirmaanai.vercel.app
 
 ![NirmaanAI Dashboard](./screenshot.png)
-![NirmaanAI Chat in Action](./screenshot-chat.png)
 
 ## ✨ Features
 
-- 💬 **Conversational estimation** — describe your project in plain English/Telugu ("150 gajala plot in Medchal, G+2, standard quality") and Claude AI extracts the details
+- 💬 **Conversational estimation** — describe your project in plain English/Telugu ("150 gajala plot in Medchal, G+2, standard quality") and Gemini AI extracts the details
 - 📍 **District-level pricing** — 12 Telangana districts with real cost coefficients; the same house costs differently in Hyderabad vs Warangal
 - 📐 **Sq. yards first** — Indians think in gajalu/sq.yds, so that's the default, auto-converted to sq.ft
 - ⚡ **Real-time cost engine** — total cost, per-sq.ft rate, and 6-category breakdown (RCC, brickwork, finishing, plumbing, electrical, others) with live donut chart
 - 🏠 **6 building types × 4 quality tiers** — Independent to G+3, Low Budget to Luxury
-- 🔒 **Secure API design** — Claude API key lives only in a Vercel serverless function, never in the browser
+- 🔒 **Secure API design** — Gemini API key lives only in a Vercel serverless function, never in the browser
 
 ## 🛠️ Tech Stack
 
-React 18 · Vite · Tailwind CSS · Recharts · Claude API (Sonnet) · Vercel Serverless Functions
+React 18 · Vite · Tailwind CSS · Recharts · Gemini API · Vercel Serverless Functions
 
 ## 🚀 Run Locally
 
 ```bash
 npm install
 npm install -g vercel        # for the serverless function
-cp .env.example .env         # add your ANTHROPIC_API_KEY
+cp .env.example .env         # add your GEMINI_API_KEY
 vercel dev                   # runs frontend + /api/chat together
 ```
 
@@ -35,7 +34,7 @@ vercel dev                   # runs frontend + /api/chat together
 
 1. Push this repo to GitHub
 2. Import the repo at [vercel.com/new](https://vercel.com/new)
-3. Add environment variable: `ANTHROPIC_API_KEY` = your key from [console.anthropic.com](https://console.anthropic.com)
+3. Add environment variable: `GEMINI_API_KEY` = your key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 4. Deploy — Vercel auto-detects Vite and the `/api` folder
 
 ## 🧮 How the Estimate Works
@@ -60,4 +59,4 @@ District coefficients range from 0.90 (Adilabad) to 1.12 (Hyderabad).
 
 ---
 
-Built by **Manikanta** · [LinkedIn](#) · [X](#)
+Built by **Manikanta** · [LinkedIn](https://www.linkedin.com/in/manikanta-b-b4998726/) · [X](https://x.com/MoneyManikanta)
